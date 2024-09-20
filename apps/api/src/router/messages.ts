@@ -1,8 +1,8 @@
 import { adminProcedure } from "../trpc.js";
 
-export const users = {
+export const messages = {
   all: adminProcedure.query(async ({ ctx }) => {
-    const users = await ctx.db.Users.find();
-    return users;
+    const mesgs = await ctx.db.Mesages.find();
+    return mesgs;
   }),
 };
