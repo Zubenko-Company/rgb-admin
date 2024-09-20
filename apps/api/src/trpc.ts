@@ -1,10 +1,13 @@
 import type { CreateFastifyContextOptions } from "@trpc/server/adapters/fastify";
 import type _fastify from "fastify";
 import { initTRPC, TRPCError } from "@trpc/server";
+import jwt from "jsonwebtoken";
 import SuperJSON from "superjson";
 import { ZodError } from "zod";
 
 import { createDatabaseConnection } from "@rgbadmin/db";
+
+import { ENV } from "./env.js";
 
 const db = createDatabaseConnection({});
 
@@ -14,6 +17,17 @@ export const createTRPCContext = async ({
 }: CreateFastifyContextOptions) => {
   function getUserFromHeader() {
     if (req.headers.authorization) {
+      const token = req.headers.authorization;
+
+      const data = jwt.verify(token, ENV.jwtSecret) as {
+        exp: number;
+        iat: number;
+      };
+
+      if (data.exp < Date.now()) {
+        throw new TRPCError({ code: "UNAUTHORIZED" });
+      }
+
       const user = {
         name: "admin",
       };

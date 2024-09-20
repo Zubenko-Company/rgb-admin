@@ -3,17 +3,11 @@ import helmet from "@fastify/helmet";
 import sensible from "@fastify/sensible";
 import ws from "@fastify/websocket";
 import { fastifyTRPCPlugin } from "@trpc/server/adapters/fastify";
-import dotenv from "dotenv";
 import fastify from "fastify";
-import { findUp } from "find-up";
 import { renderTrpcPanel } from "trpc-panel";
 
 import { appRouter } from "./root.js";
 import { createTRPCContext } from "./trpc.js";
-
-const dotenvPath = await findUp(".env");
-//TODO
-dotenv.config({ path: dotenvPath });
 
 (() => {
   const app = fastify({
