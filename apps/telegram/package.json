@@ -1,0 +1,64 @@
+{
+	"name": "@rgb/telegram",
+	"version": "1.0.0",
+	"license": "UNLICENSED",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist/"
+	],
+	"scripts": {
+		"build": "tsc",
+		"changelog": "conventional-changelog -p angular -u",
+		"changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+		"clean": "node -e \"var { rmdirSync, existsSync } = require('fs'), path = require('path'); ['./.nyc_output', './coverage', './dist'].forEach(fPath => {if (existsSync(path.join(__dirname, fPath))) rmdirSync(path.join(__dirname, fPath), { recursive: true })}); process.exit(0);\"",
+		"clean:all": "yarn clean && (rm -r ./node_modules || true)",
+		"cover": "nyc yarn test",
+		"cover:check": "nyc --check-coverage --reporter=lcov yarn test",
+		"lint": "eslint --ext .ts --max-warnings 0 src/**/*.ts",
+		"preversion": "yarn build && yarn cover:check",
+		"postversion": "git push && git push --tags",
+		"serve": "nodemon ./src/index.ts",
+		"test": "mocha",
+		"upgrade": "npx npm-check -u",
+		"version": "yarn build && yarn changelog:update",
+		"start": "ts-node src/index.ts",
+		"typeorm": "typeorm-ts-node-commonjs"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.3.10",
+		"@types/mocha": "^10.0.4",
+		"@types/node": "^20.12.12",
+		"@typescript-eslint/eslint-plugin": "^5.61.0",
+		"@typescript-eslint/parser": "^5.61.0",
+		"@typescript-eslint/typescript-estree": "^6.11.0",
+		"chai": "^4.3.10",
+		"conventional-changelog-cli": "^3.0.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^9.2.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"mocha": "^10.2.0",
+		"nodemon": "^3.1.0",
+		"nyc": "^15.1.0",
+		"prettier": "^3.2.5",
+		"source-map-support": "^0.5.21",
+		"ts-node": "^10.9.2",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.4.5"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"informer-client": "^1.0.4",
+		"mongodb": "^6.9.0",
+		"reflect-metadata": "^0.2.2",
+		"remeda": "^2.0.6",
+		"sitka": "^1.1.1",
+		"telegraf": "4.15.0",
+		"typeorm": "0.3.17"
+	}
+}
