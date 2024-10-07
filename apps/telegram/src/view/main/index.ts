@@ -1,5 +1,5 @@
 import { Markup, Scenes } from 'telegraf';
-import { InformerContext } from '@view/context';
+import { InformerContext } from './../context.js';
 
 export const SceneMainMenu =
 	new Scenes.BaseScene<InformerContext>('mainMenu');

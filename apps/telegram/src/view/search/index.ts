@@ -1,6 +1,6 @@
 import { Markup, Scenes } from 'telegraf';
-import { MODELS } from '@models/all';
-import { InformerContext } from '@view/context';
+import { MODELS } from './../../models/all.js';
+import { InformerContext } from './../context.js';
 
 export const SceneSearch = new Scenes.BaseScene<InformerContext>(
 	'Search',

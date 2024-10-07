@@ -1,8 +1,8 @@
 import { Markup, Scenes } from 'telegraf';
-import { InformerContext } from '@view/context';
-import { User } from '@models/all';
+import { InformerContext } from './../context.js';
+import { User } from './../../models/all.js';
 import { LessThan, MoreThan, MoreThanOrEqual } from 'typeorm';
-import { Message } from '@models/entity/Message';
+import { Message } from './../../models/entity/Message.js';
 import * as R from 'remeda';
 
 export const SceneAdmin = new Scenes.BaseScene<InformerContext>(
@@ -24,19 +24,19 @@ SceneAdmin.hears('Создать рассылку', (ctx) => {
 	ctx.navigator.goto('MessageConstructor');
 });
 SceneAdmin.hears('Удалить последнюю рассылку', async (ctx) => {
-	const msg = (await Message.findOne({
-		order: {
-			sendetAt: 'DESC',
-		},
-	})) as Message;
+	// const msg = (await Message.findOne({
+	// 	order: {
+	// 		sendetAt: 'DESC',
+	// 	},
+	// })) as Message;
 
-	try {
-		msg.messageIds.forEach(async (ids) => {
-			await ctx.telegram.deleteMessage(ids.chatId, ids.msgId);
-		});
-	} catch (e) {
-		console.log(e);
-	}
+	// try {
+	// 	msg.messageIds.forEach(async (ids) => {
+	// 		await ctx.telegram.deleteMessage(ids.chatId, ids.msgId);
+	// 	});
+	// } catch (e) {
+	// 	console.log(e);
+	// }
 });
 SceneAdmin.hears('Показать статистику', async (ctx) => {
 	const lastMonthDate = new Date();

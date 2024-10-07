@@ -2,6 +2,7 @@
 	"name": "@rgb/telegram",
 	"version": "1.0.0",
 	"license": "UNLICENSED",
+	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"files": [
@@ -53,6 +54,7 @@
 	},
 	"dependencies": {
 		"dotenv": "^16.4.5",
+		"find-up": "^7.0.0",
 		"informer-client": "^1.0.4",
 		"mongodb": "^6.9.0",
 		"reflect-metadata": "^0.2.2",

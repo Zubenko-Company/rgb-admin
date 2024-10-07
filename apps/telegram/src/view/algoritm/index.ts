@@ -1,6 +1,6 @@
 import { Markup, Scenes } from 'telegraf';
-import { InformerContext } from '@view/context';
-import { MODELS } from '@models/feedback';
+import { InformerContext } from './../context.js';
+import { MODELS } from './../../models/all.js';
 import * as fs from 'fs';
 
 export const SceneAlgoritm =

@@ -1,5 +1,5 @@
-import { User } from '@models/all';
-import { SCENES } from '@view/createStage';
+import { User } from './../models/all.js';
+import { SCENES } from './createStage.js';
 import { Context, Scenes } from 'telegraf';
 
 export class InformerContext extends Context {

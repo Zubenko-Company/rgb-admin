@@ -1,7 +1,7 @@
 import { Markup, Scenes } from 'telegraf';
-import { RULES, RuleType } from '@models/all';
-import { RulePrettify } from '@viewmodel/all';
-import { InformerContext } from '@view/context';
+import { RULES, RuleType } from './../../models/all.js';
+import { RulePrettify } from './../../viewmodel/all.js';
+import { InformerContext } from './../context.js';
 
 export const SceneFeedbackRules =
 	new Scenes.BaseScene<InformerContext>('feedbackRules');

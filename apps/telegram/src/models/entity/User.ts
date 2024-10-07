@@ -1,19 +1,18 @@
-import { Config } from '@models/all';
-import { SCENES } from '@view/createStage';
+import { Config } from './../config/config.js';
+import { SCENES } from './../../view/createStage.js';
 import {
 	Entity,
 	Column,
 	BaseEntity,
-	ObjectIdColumn,
-	ObjectId,
+	PrimaryGeneratedColumn,
 } from 'typeorm';
 
 @Entity()
 export class User extends BaseEntity {
-	@ObjectIdColumn()
-	id: ObjectId;
+	@PrimaryGeneratedColumn()
+	id: string;
 
-	@Column({ unique: true })
+	@Column({ unique: true, type: 'bigint'})
 	chatId: number;
 
 	@Column()

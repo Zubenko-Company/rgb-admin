@@ -1,4 +1,4 @@
-import { FeedbackType } from '@models/all';
+import { FeedbackType } from '../../models/all.js';
 
 export class FeedbackPrettify {
 	public static prettify(feedback: FeedbackType) {

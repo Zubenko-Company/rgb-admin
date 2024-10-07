@@ -1,7 +1,7 @@
-import { InformerContext } from '@view/context';
-import { sceneErrorHandler } from '@view/errorHandler';
+import { InformerContext } from './context.js';
+import { sceneErrorHandler } from './errorHandler.js';
 import { Composer, Scenes } from 'telegraf';
-import * as S from './index';
+import * as S from './index.js';
 
 export const SCENES = {
 	FeedbackRules: S.SceneFeedbackRules,

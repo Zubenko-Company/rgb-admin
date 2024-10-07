@@ -1,7 +1,7 @@
 import { Markup, Scenes } from 'telegraf';
-import { InformerContext } from '@view/context';
+import { InformerContext } from './../context.js';
 import * as fs from 'fs';
-import { sendTopic } from 'src/client';
+import { sendTopic } from './../../client/index.js';
 
 export const SceneAgreement =
 	new Scenes.BaseScene<InformerContext>('agreement');

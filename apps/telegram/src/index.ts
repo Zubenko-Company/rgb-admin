@@ -1,10 +1,10 @@
 import 'reflect-metadata';
 import { session, Telegraf } from 'telegraf';
-import { Config } from '@models/all';
-import { createStage } from '@view/createStage';
-import { SceneAgreement } from '@view/agreement';
-import { AppDataSource } from './data-source';
-import { InformerContext } from '@view/context';
+import { Config } from './models/all.js';
+import { createStage } from './view/createStage.js';
+import { SceneAgreement } from './view/agreement/index.js';
+import { AppDataSource } from './data-source.js';
+import { InformerContext } from './view/context.js';
 
 (async () => {
 	await AppDataSource.initialize();

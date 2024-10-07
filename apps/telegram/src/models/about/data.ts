@@ -1,4 +1,4 @@
-import { AboutType } from './type';
+import { AboutType } from './type.js';
 
 export const ABOUT: AboutType = {
 	tasks:

@@ -1,4 +1,4 @@
-import { sendTopic } from 'src/client';
+import { sendTopic } from '../client/index.js';
 
 export const sceneErrorHandler = (err: unknown): void => {
 	if (err instanceof Error) {

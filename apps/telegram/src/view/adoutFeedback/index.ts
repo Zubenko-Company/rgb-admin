@@ -1,6 +1,6 @@
 import { Markup, Scenes } from 'telegraf';
-import { InformerContext } from '@view/context';
-import { FEEDBACKINFO } from '@models/feedbackInfo';
+import { InformerContext } from './../context.js';
+import { FEEDBACKINFO } from './../../models/feedbackInfo/index.js';
 
 export const SceneAboutFeedback =
 	new Scenes.BaseScene<InformerContext>('aboutFeedback');

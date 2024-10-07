@@ -1,6 +1,6 @@
 import { Markup, Scenes } from 'telegraf';
-import { InformerContext } from '@view/context';
-import { ABOUT } from '@models/about/data';
+import { InformerContext } from './../context.js';
+import { ABOUT } from './../../models/about/data.js';
 
 export const SceneAbout = new Scenes.BaseScene<InformerContext>(
 	'about',
