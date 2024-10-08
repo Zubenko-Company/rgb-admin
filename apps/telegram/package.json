@@ -53,7 +53,7 @@
 		}
 	},
 	"dependencies": {
-		"dotenv": "^16.4.5",
+		"@rgbadmin/config": "workspace:*",
 		"find-up": "^7.0.0",
 		"informer-client": "^1.0.4",
 		"mongodb": "^6.9.0",

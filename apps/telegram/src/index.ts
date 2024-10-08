@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 import { session, Telegraf } from 'telegraf';
-import { Config } from './models/all.js';
+import { Config } from '@rgbadmin/config';
 import { createStage } from './view/createStage.js';
 import { SceneAgreement } from './view/agreement/index.js';
 import { AppDataSource } from './data-source.js';

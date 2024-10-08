@@ -1,7 +1,7 @@
 import { DataSource } from 'typeorm';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import { Config } from './models/all.js';
+import { Config } from '@rgbadmin/config';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
