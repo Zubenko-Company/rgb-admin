@@ -27,6 +27,8 @@
 		"typeorm": "typeorm-ts-node-commonjs"
 	},
 	"devDependencies": {
+		"@rgbadmin/eslint-config": "workspace:*",
+		"@rgbadmin/prettier-config": "workspace:*",
 		"@rgbadmin/tsconfig": "workspace:*",
 		"@types/chai": "^4.3.10",
 		"@types/mocha": "^10.0.4",
@@ -63,5 +65,6 @@
 		"sitka": "^1.1.1",
 		"telegraf": "4.15.0",
 		"typeorm": "0.3.17"
-	}
+	},
+	"prettier": "@rgbadmin/prettier-config"
 }
