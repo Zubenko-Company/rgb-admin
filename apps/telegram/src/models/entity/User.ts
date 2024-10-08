@@ -1,4 +1,4 @@
-import { Config } from './../config/config.js';
+import { Config } from '@rgbadmin/config';
 import { SCENES } from './../../view/createStage.js';
 import {
 	Entity,

@@ -1,8 +1,8 @@
 import { createInformerApi } from 'informer-client';
 
 const { sendMessage } = createInformerApi({
-	url: process.env.INFORMER_URL!,
-	token: process.env.INFORMER_TOKEN!,
+	url: 'process.env.INFORMER_URL!',
+	token: 'process.env.INFORMER_TOKEN!',//TODO
 });
 
 export const sendTopic = async (message: {

@@ -6,6 +6,8 @@ import { SceneAgreement } from './view/agreement/index.js';
 import { AppDataSource } from './data-source.js';
 import { InformerContext } from './view/context.js';
 
+
+
 (async () => {
 	await AppDataSource.initialize();
 

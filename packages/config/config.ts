@@ -1,5 +1,10 @@
-import dotenv from 'dotenv';
-dotenv.config();
+
+import dotenv from "dotenv";
+import { findUp } from "find-up";
+
+const dotenvPath = await findUp(".env");
+dotenv.config({ path: dotenvPath });
+
 
 const getErrorEnvMessage = (fieldName: string) =>
 	`Вы не установили ${fieldName} поле в .env, выполните команду \`cp .env.dist .env\` и заполните поле ${fieldName}`;

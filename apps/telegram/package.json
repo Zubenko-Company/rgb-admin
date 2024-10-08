@@ -27,6 +27,7 @@
 		"typeorm": "typeorm-ts-node-commonjs"
 	},
 	"devDependencies": {
+		"@rgbadmin/tsconfig": "workspace:*",
 		"@types/chai": "^4.3.10",
 		"@types/mocha": "^10.0.4",
 		"@types/node": "^20.12.12",
