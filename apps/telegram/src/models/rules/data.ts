@@ -1,4 +1,4 @@
-import type { RuleType } from './type.js';
+import type { RuleType } from './type';
 
 export const RULES: RuleType[] = [
 	{

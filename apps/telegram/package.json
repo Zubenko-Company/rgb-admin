@@ -1,13 +1,15 @@
 {
-	"name": "@rgb/telegram",
+	"name": "rule-guide-bot",
 	"version": "1.0.0",
 	"license": "UNLICENSED",
-	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"files": [
 		"dist/"
 	],
+	"engines": {
+		"node": ">=18.0.0 <19.0.0"
+	},
 	"scripts": {
 		"build": "tsc",
 		"changelog": "conventional-changelog -p angular -u",
@@ -27,9 +29,6 @@
 		"typeorm": "typeorm-ts-node-commonjs"
 	},
 	"devDependencies": {
-		"@rgbadmin/eslint-config": "workspace:*",
-		"@rgbadmin/prettier-config": "workspace:*",
-		"@rgbadmin/tsconfig": "workspace:*",
 		"@types/chai": "^4.3.10",
 		"@types/mocha": "^10.0.4",
 		"@types/node": "^20.12.12",
@@ -56,8 +55,7 @@
 		}
 	},
 	"dependencies": {
-		"@rgbadmin/config": "workspace:*",
-		"find-up": "^7.0.0",
+		"dotenv": "^16.4.5",
 		"informer-client": "^1.0.4",
 		"mongodb": "^6.9.0",
 		"reflect-metadata": "^0.2.2",
@@ -65,6 +63,5 @@
 		"sitka": "^1.1.1",
 		"telegraf": "4.15.0",
 		"typeorm": "0.3.17"
-	},
-	"prettier": "@rgbadmin/prettier-config"
+	}
 }

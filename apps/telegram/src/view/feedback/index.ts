@@ -1,8 +1,8 @@
 import { Markup, Scenes } from 'telegraf';
-import { MODELS } from './../../models/all.js';
+import { MODELS } from '@models/all';
 import * as R from 'remeda';
-import { FeedbackPrettify } from './../../viewmodel/all.js';
-import { InformerContext } from './../context.js';
+import { FeedbackPrettify } from '@viewmodel/all';
+import { InformerContext } from '@view/context';
 
 export const SceneFeedbackModels =
 	new Scenes.BaseScene<InformerContext>('feedbackModels');

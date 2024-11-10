@@ -1,9 +1,4 @@
-import type { FeedbackType } from './type.js';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import type { FeedbackType } from './type';
 
 export const MODELS: FeedbackType[] = [
 	{
@@ -20,7 +15,7 @@ export const MODELS: FeedbackType[] = [
 			'Завершение беседы на позитиве',
 		],
 		algoritm: {
-			imageSource: '__dirname' + '/../../media/images/buter.png',
+			imageSource: __dirname + '/../../media/images/buter.png',
 			info:
 				'✏️ Для корректировки действий и развития навыка даем Обратную связь по модели PiP / "Бутерброд"\n\n' +
 				'Алгоритм:\n' +

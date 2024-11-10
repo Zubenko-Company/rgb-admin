@@ -1,1 +1,1 @@
-export * from './informerClient.js';
+export * from './informerClient';

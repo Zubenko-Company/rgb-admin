@@ -1,18 +1,19 @@
-import { Config } from '@rgbadmin/config';
-import { SCENES } from './../../view/createStage.js';
+import { Config } from '@models/all';
+import { SCENES } from '@view/createStage';
 import {
 	Entity,
 	Column,
 	BaseEntity,
-	PrimaryGeneratedColumn,
+	ObjectIdColumn,
+	ObjectId,
 } from 'typeorm';
 
 @Entity()
 export class User extends BaseEntity {
-	@PrimaryGeneratedColumn()
-	id: string;
+	@ObjectIdColumn()
+	id: ObjectId;
 
-	@Column({ unique: true, type: 'bigint'})
+	@Column({ unique: true })
 	chatId: number;
 
 	@Column()

@@ -1,16 +1,22 @@
-import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import {
+	Entity,
+	Column,
+	BaseEntity,
+	ObjectIdColumn,
+	ObjectId,
+} from 'typeorm';
 
 @Entity()
 export class Message extends BaseEntity {
-  @PrimaryGeneratedColumn()
-  id: string;
+	@ObjectIdColumn()
+	id: ObjectId;
 
-  @Column()
-  content: string;
+	@Column()
+	content: string;
 
-  @Column()
-  messageIds: string; //{ chatId: number; msgId: number }[];
+	@Column()
+	messageIds: { chatId: number; msgId: number }[];
 
-  @Column()
-  sendetAt: Date;
+	@Column()
+	sendetAt: Date;
 }

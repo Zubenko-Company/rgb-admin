@@ -1,3 +1,4 @@
-export * from './feedback/index.js';
-export * from './rules/index.js';
-export * from './entity/User.js';
+export * from './feedback';
+export * from './rules';
+export * from './config/config';
+export * from './entity/User';

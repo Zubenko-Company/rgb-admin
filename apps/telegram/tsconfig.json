@@ -1,19 +1,35 @@
 {
-	"extends": "@rgbadmin/tsconfig/base.json",
 	"compilerOptions": {
-	  "target": "ESNext",
-	  "module": "NodeNext",
-	  "moduleResolution": "NodeNext",
-	  "isolatedModules": false,
-	  "outDir": "dist",
-	  "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
-	  "esModuleInterop": true,
-	  "emitDecoratorMetadata": true,
-	  "experimentalDecorators": true,
-	  "skipLibCheck": true,
-	  "noEmit": false
+		"strictPropertyInitialization": false,
+		"forceConsistentCasingInFileNames": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"preserveConstEnums": true,
+		"resolveJsonModule": true,
+		"target": "ESNext",
+		"module": "commonjs",
+		"lib": ["es5", "es6"],
+		"declaration": true,
+		"sourceMap": true,
+		"outDir": "dist",
+		"rootDir": "src",
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noImplicitThis": true,
+		// "noUnusedLocals": true,
+		"noImplicitReturns": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "node",
+		"typeRoots": ["node_modules/@types", "types"],
+		"esModuleInterop": true,
+		"isolatedModules": false,
+		"baseUrl": ".",
+		"paths": {
+			"@models/*": ["src/models/*"],
+			"@view/*": ["src/view/*"],
+			"@viewmodel/*": ["src/viewmodel/*"]
+		}
 	},
-	"include": ["src"],
-	"exclude": ["node_modules", "dist"]
-  }
-  
+	"exclude": ["node_modules", "test", "types", "dist"]
+}

@@ -1,4 +1,4 @@
-import { FeedbackInfoType } from './type.js';
+import { FeedbackInfoType } from './type';
 
 export const FEEDBACKINFO: FeedbackInfoType = [
 	{

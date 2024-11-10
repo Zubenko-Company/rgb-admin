@@ -1,3 +1,3 @@
-export * from './rules/index.js';
-export * from './feedback/index.js';
-export * from './search/index.js';
+export * from './rules';
+export * from './feedback';
+export * from './search';

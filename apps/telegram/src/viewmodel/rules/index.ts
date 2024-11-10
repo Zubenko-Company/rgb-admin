@@ -1,4 +1,4 @@
-import { RuleType } from '../../models/all.js';
+import { RuleType } from '@models/all';
 
 export class RulePrettify {
 	public static prettify(rule: RuleType) {
