@@ -1,5 +1,5 @@
 {
-  "extends": "@rgbadmin/tsconfig/base.json",
+  "extends": "@mass-master/tsconfig/base.json",
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",

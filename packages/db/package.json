@@ -1,5 +1,5 @@
 {
-  "name": "@rgbadmin/db",
+  "name": "@mass-master/db",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -23,13 +23,13 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@rgbadmin/eslint-config": "workspace:*",
-    "@rgbadmin/prettier-config": "workspace:*",
-    "@rgbadmin/tsconfig": "workspace:*",
+    "@mass-master/eslint-config": "workspace:*",
+    "@mass-master/prettier-config": "workspace:*",
+    "@mass-master/tsconfig": "workspace:*",
     "@types/node": "^20.12.12",
     "eslint": "^9.2.0",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5"
   },
-  "prettier": "@rgbadmin/prettier-config"
+  "prettier": "@mass-master/prettier-config"
 }

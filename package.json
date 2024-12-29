@@ -23,11 +23,11 @@
     "ui-add": "pnpm -F ui ui-add"
   },
   "devDependencies": {
-    "@rgbadmin/prettier-config": "workspace:*",
+    "@mass-master/prettier-config": "workspace:*",
     "@turbo/gen": "^1.13.3",
     "prettier": "^3.2.5",
     "turbo": "^1.13.3",
     "typescript": "^5.4.5"
   },
-  "prettier": "@rgbadmin/prettier-config"
+  "prettier": "@mass-master/prettier-config"
 }

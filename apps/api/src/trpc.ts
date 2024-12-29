@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 import SuperJSON from "superjson";
 import { ZodError } from "zod";
 
-import { createDatabaseConnection } from "@rgbadmin/db";
+import { createDatabaseConnection } from "@mass-master/db";
 
 import { ENV } from "./env.js";
 

@@ -1,4 +1,4 @@
-import baseConfig from "@rgbadmin/eslint-config/base";
+import baseConfig from "@mass-master/eslint-config/base";
 
 /** @type {import('typescript-eslint').Config} */
 export default [

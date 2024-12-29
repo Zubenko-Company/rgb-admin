@@ -1,5 +1,5 @@
 {
-  "name": "@rgbadmin/eslint-config",
+  "name": "@mass-master/eslint-config",
   "private": true,
   "version": "0.3.0",
   "type": "module",
@@ -23,11 +23,11 @@
     "typescript-eslint": "^7.8.0"
   },
   "devDependencies": {
-    "@rgbadmin/prettier-config": "workspace:*",
-    "@rgbadmin/tsconfig": "workspace:*",
+    "@mass-master/prettier-config": "workspace:*",
+    "@mass-master/tsconfig": "workspace:*",
     "eslint": "^9.2.0",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5"
   },
-  "prettier": "@rgbadmin/prettier-config"
+  "prettier": "@mass-master/prettier-config"
 }

@@ -15,7 +15,7 @@ const config = {
     "^(expo(.*)$)|^(expo$)",
     "<THIRD_PARTY_MODULES>",
     "",
-    "<TYPES>^@rgbadmin",
+    "<TYPES>^@@mass-master",
     "^@mass-master/(.*)$",
     "",
     "<TYPES>^[.|..|~]",
@@ -23,6 +23,7 @@ const config = {
     "^[../]",
     "^[./]",
   ],
+  singleQuote: true,
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
   importOrderTypeScriptVersion: "4.4.0",
 };

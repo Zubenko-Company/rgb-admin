@@ -1,5 +1,5 @@
 {
-  "name": "@rgbadmin/prettier-config",
+  "name": "@mass-master/prettier-config",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -16,7 +16,7 @@
     "prettier": "^3.2.5"
   },
   "devDependencies": {
-    "@rgbadmin/tsconfig": "workspace:*",
+    "@mass-master/tsconfig": "workspace:*",
     "typescript": "^5.4.5"
   },
   "prettier": "@informerus/prettier-config"
